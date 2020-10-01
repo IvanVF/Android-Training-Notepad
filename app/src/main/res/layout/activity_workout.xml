@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"/>
+
+        <EditText
+            android:id="@+id/trainingDateEditT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_weight"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myWeightEditT"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise"/>
+
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exerciseEditT"/>
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:columnCount="7">
+
+            <TextView
+                android:text="@string/ex_weight"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_gravity="fill"
+                android:text="@string/approaches"
+                android:layout_columnSpan="3"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_gravity="fill"
+                android:text="@string/repeats"
+                android:layout_columnSpan="3"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="70dp"
+                android:inputType="numberDecimal"
+                android:id="@+id/exerciseWeightEditT" />
+
+            <Button
+                android:id="@+id/numberOfApproachDecr1Btn"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/numberOfApproach1stTextV"
+                android:layout_width="30dp"
+                android:text="0"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/numberOfApproachIncr1stBtn"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/numberOfRepeatDecr1stBtn"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:text="-" />
+
+            <TextView
+                android:inputType="numberSigned"
+                android:id="@+id/numberOfRepeat1stTextV"
+                android:text="0"
+                android:layout_width="30dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/numberOfRepeatIncr1stBtn"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:text="+" />
+
+
+
+
+
+        </GridLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addExerciseBtn"
+            android:text="@string/add_exercise"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endWorkoutBtn"
+            android:text="@string/end_workout"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showBtn"
+            android:text="@string/show"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteTableBtn"
+            android:text="@string/delete_table"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showTextView"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

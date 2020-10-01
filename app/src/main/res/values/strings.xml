@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TrainingNotepad</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="workout_List">Workout List</string>
+    <string name="date">Date</string>
+    <string name="my_weight">My Weight</string>
+    <string name="exercise">Exercise</string>
+    <string name="ex_weight">Ex. Weight</string>
+    <string name="approaches">Approaches</string>
+    <string name="repeats">Repeats</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="end_workout">End workout</string>
+    <string name="show">Show</string>
+    <string name="delete_table">Delete Table</string>
+</resources>
